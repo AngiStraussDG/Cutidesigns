@@ -211,7 +211,7 @@ button.btn.btn-outline-success:disabled {
     width: 150px;
     margin: 5px 20px 20px 100px;
     border-radius: 10px;
--webkit-border-radius: 10;
+-webkit-border-radius: 10px;
 -moz-border-radius: 10px;
 }
 .hero a:hover {
@@ -401,7 +401,7 @@ button.btn.btn-outline-success:disabled {
     width: 150px;
     margin: 5px 20px 20px 100px;
     border-radius: 10px;
--webkit-border-radius: 10;
+-webkit-border-radius: 10px;
 -moz-border-radius: 10px;
 }
 .coleccion a:hover {
