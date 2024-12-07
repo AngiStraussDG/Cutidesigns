@@ -29,7 +29,7 @@ body{
 }
 .bg-body-tertiary {
     --bs-bg-opacity: 1;
-    background-color: #ffffff !important;
+    background-color: #ffffff;
 }
 .navbar-brand img {
     width: 100px; 
@@ -116,6 +116,12 @@ button.btn.btn-outline-success:disabled {
     border-color: #d78081; 
     opacity: 0.5;
     cursor: not-allowed;
+}
+.sticky-top {
+    position: sticky !important;
+    top: 0;
+    z-index: 1030;
+    background-color: #ffffff;
 }
 
                 /*--- main ---*/
@@ -982,6 +988,37 @@ footer {
     transform: translateY(-5px);
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
 }
+.muestra-color {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid #bbb;
+    display: inline-block;
+}
+.muestra-color.negro {
+    background-color: #000000;
+}
+.muestra-color.rosa-chicle {
+    background-color: #fd8ed3;
+}
+.muestra-color.violeta {
+    background-color: #601d97;
+}
+.muestra-color.verde {
+    background-color: #798d7c;
+}
+.muestra-color.azul-oscuro {
+    background-color: #0c0044;
+}
+.muestra-color.denim {
+    background-color: #0f53a7;
+}
+.muestra-color.rojo {
+    background-color: #a3283c;
+}
+.muestra-color.gris-medio {
+    background-color: #adadad;
+}
 
 /* header de galeria */
 
@@ -1212,7 +1249,7 @@ footer {
     justify-content: center;
     background-color: #ffdede;
     padding: 40px;
-    width: 100vw;
+    width: 100%;
 }
 .fundadora-info {
     flex: 1;
@@ -1254,7 +1291,7 @@ footer {
     justify-content: center;
     background-color: #a5565f; 
     padding: 40px;
-    width: 100vw;
+    width: 100%;
 }
 .nosotros-info {
     flex: 1;
@@ -1417,5 +1454,14 @@ button:hover {
     }
     .contacto-seccion .formulario .formulario-contenedor {
         max-width: 90%;
+    }
+}
+@media (max-width: 400px) {
+    .lineaform {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .contacto-seccion .formulario {
+        align-items: flex-start;
     }
 }
