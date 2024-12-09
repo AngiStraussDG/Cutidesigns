@@ -260,6 +260,7 @@ button.btn.btn-outline-success:disabled {
     background-color: #fff;
     color: $color-primario; 
     transition: color 0.3s ease, background-color 0.3s ease;
+    margin: 0;
 }
 .accordion_filtros .accordion-button:not(.collapsed) {
     background-color: #fff;
@@ -285,6 +286,7 @@ button.btn.btn-outline-success:disabled {
     text-decoration: none; 
     font-weight: 600;
     font-size: 14px;
+    margin: 0;
     transition: color 0.3s ease; 
 }
 .accordionfiltro-collapse ul li a:hover {
