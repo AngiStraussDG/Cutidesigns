@@ -1,0 +1,260 @@
+@include breakpoint($break-large) {
+    .footer-container {
+        grid-template-columns: repeat(3, 2fr);
+    }
+}
+
+@include breakpoint($break-medium) {
+    .hero {
+        h1 {
+            font-size: 40px;
+            max-width: 500px;
+            margin: 5px 20px 20px 50px;
+        }
+        p{
+            font-size: 20px;
+            width: 400px;
+            margin: 5px 20px 20px 50px;
+        }
+        a{
+            margin: 5px 20px 20px 50px;
+        }
+    }
+    .coleccion{ 
+        .subtitulo {
+            width: 500px;
+        }
+    }
+    .atributos-marca div {
+        flex: 1 1 150px;
+    }
+    .reseñas div {
+        flex: 1 1 150px;
+    }
+    .nosotros-section {
+        .fundadora-container,
+        .historia-container {
+            flex-direction: column;
+            padding: 20px;
+            text-align: center;
+            .fundadora-info,
+            .historia-info {
+                max-width: 100%;
+            }
+            .fundadora-img img,
+            .historia-img img {
+                max-width: 300px;
+                margin: 0 auto;
+            }
+        }
+    }
+    footer{
+        .footer-container {
+            grid-template-columns: repeat(2, 3fr);
+        }
+    }
+}
+
+@include breakpoint($break-small) {
+    .contacto-seccion {
+        flex-direction: column;
+        > div {
+            width: 100%;
+        }
+        .formulario {
+            align-items: center;
+            border-right: none;
+        }
+        .form-contenedor {
+            max-width: 100%;
+        }
+    }
+    .suscripcion{
+        flex-direction: column;
+        h2 {
+            font-size: 22px;
+            text-align: center;
+        }
+        div {
+            align-items: center;
+            input[type="email"] {
+                width: 100%;
+                max-width: 400px;
+            }
+            a {
+                width: 100%;
+                max-width: 400px;
+                text-align: center;
+            }
+        }
+    }
+    
+}
+
+@include breakpoint($break-xsmall) {
+    .hero {
+        background-position-x: -680px;
+        h1 {
+            max-width: 280px;
+        }
+        p {
+            max-width: 280px;
+        }
+    }
+    .banner-atributos {
+        div {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+            img {
+            margin-right: 0;
+            margin-bottom: 10px;
+            }
+            .texto-container {
+            text-align: center;
+            }
+        }
+    }
+    .coleccion {
+        display: block;
+        .subtitulo {
+            max-width: 100%;
+        }
+    }
+    .nosotros-section {
+        .fundadora-container {
+            gap: 30px;
+            .fundadora-info {
+                p {
+                    font-size: 14px;
+                    padding: 0px 20px;
+                    margin: 0;
+                }
+            }
+        }
+        .historia-container {
+            gap: 30px;
+            .historia-info {
+                p {
+                    font-size: 14px;
+                    padding: 0px 20px;
+                    margin: 0;
+                }
+            }
+        }
+    }
+    .categorias {
+        flex-direction: column;
+        align-items: flex-start;
+        ul {
+            padding: 0px;
+        }
+        button {
+            margin-top: 10px;
+        }
+    }
+    footer{
+        .footer-container {
+            display: none;
+            }
+        .accordion {
+            display: block;
+            .footer-logo {
+                img {
+                display: block;
+                }
+            }
+        }
+    }
+}
+
+@include breakpoint($break-xs) {
+    .hero {
+        background-position-x: -540px;
+        h1 {
+            font-size: 35px;
+            max-width: 250px;
+            margin: 5px auto 20px auto;
+            text-align: center;
+        }
+        p {
+            font-size: 20px;
+            max-width: 250px;
+            margin: 5px auto 20px auto;
+            text-align: center;
+        }
+        a {
+            margin: 5px auto 20px auto;
+            display: flex;
+            justify-content: center;
+            padding: 10px 20px;
+            text-align: center;
+        }
+    }
+    .banner-atributos {
+        padding: 10px;
+        margin: 0;
+        justify-content: space-evenly;
+        div {
+            width: 60%;
+            .texto-container {
+                h2, h3 {
+                    font-size: 12px;
+                }
+            }
+        }         
+    }
+    .mas-vendidos {
+        .subtitulo {
+            flex-direction: column;
+            align-items: center;
+        }
+            h2 {
+            margin-bottom: 10px;
+        }
+    }
+    .coleccion {
+        .subtitulo {
+        align-items: center;
+        text-align: center;
+        }
+    }
+    .nuevos-modelos {
+        .subtitulo {
+        flex-direction: column;
+        align-items: center;
+        }
+            h2 {
+                margin-bottom: 10px;
+            }
+        }
+    .suscripcion {
+        flex-direction: column;
+        text-align: center;
+        h2 {
+            font-size: 20px;
+        }
+        div {
+            flex-direction: column;
+            input[type="email"] {
+                width: 100%;
+                max-width: 300px;
+            }
+            a {
+                width: 100%;
+                max-width: 300px;
+                text-align: center;
+            }
+        }
+    }
+    .contacto-seccion {
+            .form-contenedor {
+                max-width: 100%;
+                .lineaform {
+                        flex-direction: column;
+                        gap: 10px;
+                }
+            }
+        }
+}
+

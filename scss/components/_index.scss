@@ -1,0 +1,316 @@
+/*--- banner atributos ---*/
+
+.banner-atributos {
+    background-color: $color-fondo;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    max-width: 100%;
+    div {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        img {
+            width: 50px;
+            margin-right: 10px;
+            height: auto;
+            max-width: 100%;
+            object-fit: contain;
+        }
+        .texto-container {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            h2 {
+                font-family: $fuente-primaria;
+                font-optical-sizing: auto;
+                font-weight: 700;
+                font-style: normal;
+                font-size: 13px;
+                margin-bottom: 3px;
+            }
+            h3 {
+                font-family: $fuente-primaria;
+                font-optical-sizing: auto;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+/*--- hero ---*/
+
+.hero {
+    height: 500px;
+    background-image: url("../img/hero.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h1 {
+        font-family: $fuente-primaria;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 50px;
+        text-align: left;
+        color: white;
+        width: 700px;
+        margin: 5px 20px 20px 100px;
+    }
+    p {
+        font-family: $fuente-primaria;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 30px;
+        text-align: left;
+        color: white;
+        width: 500px;
+        margin: 5px 20px 20px 100px;
+    }
+    a {
+        @extend .boton; 
+        margin: 5px 20px 20px 100px;
+    }
+}
+
+/*--- mas vendidos ---*/
+
+.mas-vendidos {
+    height: auto;
+    background-color: $color-fondoblanco;
+    align-items: center;
+    border: 1px solid $color-fondo;
+    padding: 50px;
+    gap: 20px;
+    .subtitulo {
+        text-align: right;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-bottom: 30px;
+            h2 {
+                font-family: $fuente-primaria;
+                font-optical-sizing: auto;
+                font-weight: 700;
+                font-style: normal;
+                font-size: 25px;
+                text-align: right;
+            }
+            a {
+                font-family: $fuente-primaria;
+                font-optical-sizing: auto;
+                font-weight: 700;
+                font-style: normal;
+                font-size: 16px;
+                text-align: right;
+                color: black;
+            }
+    }
+    .productos {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-evenly;
+    }
+}
+
+/*--- colección ---*/
+
+.coleccion {
+    background-color: $color-primario;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px;
+    height: auto;
+    box-sizing: border-box;
+    .subtitulo {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        width: 500px;
+        margin-bottom: 30px;
+            h2 {
+                font-family: $fuente-primaria;
+                font-optical-sizing: auto;
+                font-weight: 700;
+                font-style: normal;
+                font-size: 40px;
+                color: white;
+            }
+            h3 {
+                font-family: $fuente-primaria;
+                font-optical-sizing: auto;
+                font-weight: 500;
+                font-style: normal;
+                font-size: 20px;
+                color: white;
+                padding: 10px 10px 20px 0px;
+            }
+            a {
+                @extend .boton;
+            }
+        }
+    .coleccion-productos {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-evenly;
+        .producto_galeria {
+                @extend .producto_galeria;
+                width: 350px;
+        }
+    }
+}
+
+/*--- nuevos modelos ---*/
+
+.nuevos-modelos {
+    height: auto;
+    background-color: $color-fondoblanco;
+    align-items: center;
+    margin-top: 0;
+    border: 1px solid $color-fondo;
+    padding: 50px;
+    gap: 20px;
+    .subtitulo {
+        font-family: $fuente-primaria;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 16px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-bottom: 30px;
+        h2 {
+            font-family: $fuente-primaria;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 25px;
+            text-align: right;
+        }
+        a {
+            font-family: $fuente-primaria;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 16px;
+            text-align: right;
+            color: black;
+        }
+    }
+    .productos {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-evenly;
+        .card-informacion h2 {
+            font-family: $fuente-primaria;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 16px;
+            text-align: right;
+        }
+    }
+}
+
+/*--- atributos marca ---*/
+
+.atributos-marca {
+    background-color: $color-fondo;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px;
+    gap: 20px;
+    div {
+        flex: 1 1 200px;
+        max-width: 250px;
+        min-width: 150px;
+        text-align: center;
+        padding: 10px;
+        img {
+            width: 50px;
+        }
+        h2 {
+            font-family: $fuente-primaria;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+        p {
+            font-family: $fuente-primaria;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: normal;
+            font-size: 16px;
+        }
+    }
+}
+
+/*--- reseñas ---*/
+
+.reseñas {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    background-color: $color-fondoblanco;
+    padding: 50px;
+    gap: 20px;
+    div {
+        flex: 1 1 200px;
+        max-width: 300px;
+        min-width: 150px;
+        height: auto;
+        text-align: center;
+        background-color: $color-fondoblanco;
+        padding: 20px;
+        box-shadow: 4px 6px 11px -4px rgba(0, 0, 0, 0.39);
+        -webkit-box-shadow: 4px 6px 11px -4px rgba(0, 0, 0, 0.39);
+        -moz-box-shadow: 4px 6px 11px -4px rgba(0, 0, 0, 0.39);
+        img {
+            width: 100px;
+            padding: 10px;
+        }
+        h2 {
+            font-family: $fuente-primaria;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 20px;
+            padding: 0px 10px 10px 10px;
+        }
+        p {
+            font-family: $fuente-primaria;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: italic;
+            font-size: 16px;
+            color: black;
+            padding: 10px 10px 0px 10px;
+            box-sizing: border-box;
+            word-wrap: break-word;
+            white-space: normal;
+        }
+    }
+}

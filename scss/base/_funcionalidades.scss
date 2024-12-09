@@ -1,0 +1,79 @@
+/*--- variables ---*/
+
+$color-primario: #d78081;
+$color-secundario: #a5565f;
+$color-texto: #333333;
+$color-fondo: #f4f1ee;
+$color-fondoblanco: #fafafa;
+$fuente-primaria: "Raleway", sans-serif;
+$fuente-secundaria: "Lato", sans-serif;
+
+$break-large: 1260px;
+$break-medium: 810px;
+$break-small: 700px;
+$break-xsmall: 555px;
+$break-xs: 360px;
+
+/*--- lista ---*/
+
+$colores-muestra: (
+    negro: #000000,
+    rosa-chicle: #fd8ed3,
+    violeta: #601d97,
+    verde: #798d7c,
+    azul-oscuro: #0c0044,
+    denim: #0f53a7,
+    rojo: #a3283c,
+    gris-medio: #adadad
+);
+
+/*--- Extend ---*/
+
+%boton-base {
+    font-family: $fuente-primaria;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: $color-primario;
+    background-color: white;
+    width: 150px;
+    padding: 10px;
+    &:hover {
+        transform: scale(1.1);
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+}
+
+/*--- Mixin ---*/
+
+@mixin generar-muestra-color {
+    @each $nombre, $color in $colores-muestra {
+    .muestra-color.#{$nombre} {
+        background-color: $color;
+        }
+    }
+}
+
+@mixin tarjeta($ancho: 250px, $radio: 10px, $sombra: 0 4px 6px rgba(0, 0, 0, 0.1)) {
+    background-color: white;
+    border-radius: $radio;
+    box-shadow: $sombra;
+    width: $ancho;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    }
+}
+
+@mixin breakpoint($size) {
+    @media screen and (max-width: $size) {
+        @content;
+    }
+}

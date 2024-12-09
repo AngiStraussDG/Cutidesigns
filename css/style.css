@@ -267,7 +267,7 @@ button.btn.btn-outline-success:disabled {
     gap: 20px;
     justify-content: space-evenly;
 }
-.productos > div {
+.productos .producto_galeria {
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 4px 6px #0000001a;
@@ -335,7 +335,7 @@ button.btn.btn-outline-success:disabled {
     font-weight: 600;
     color: #555;
 }
-.productos > div:hover {
+.productos .producto_galeria:hover {
     transform: translateY(-5px);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
@@ -421,7 +421,7 @@ button.btn.btn-outline-success:disabled {
     gap: 20px;
     justify-content: space-evenly;
 }
-.coleccion-productos > div {
+.coleccion-productos .producto_galeria {
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 4px 6px #0000001a;
@@ -436,7 +436,7 @@ button.btn.btn-outline-success:disabled {
     height: auto;
     border-radius: 10px 10px 0 0;
 }
-.coleccion-productos > div:hover {
+.coleccion-productos .producto_galeria:hover {
     transform: translateY(-5px);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);

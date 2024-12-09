@@ -1,0 +1,84 @@
+.nosotros-section {
+    display: flex;
+    flex-direction: column;
+    font-family: $fuente-primaria;
+    background-color: $color-primario;
+    align-items: center;
+    .fundadora-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        align-items: center;
+        justify-content: center;
+        background-color: #ffdede;
+        padding: 40px;
+        width: 100%;
+        .fundadora-info {
+            flex: 1;
+            color: $color-texto;
+            max-width: 550px;
+            .section-subtitulo {
+                font-size: 16px;
+                color: $color-secundario;
+                margin-bottom: 10px;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+            .section-titulo {
+                font-size: 28px;
+                font-weight: bold;
+                color: black;
+                margin-bottom: 20px;
+            }
+            p {
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 1.6;
+                color: $color-texto;
+            }
+        }
+        .fundadora-img {
+            img {
+                width: 100%;
+                max-width: 400px;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            }
+        }
+    }
+    .historia-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        align-items: center;
+        justify-content: center;
+        background-color: $color-secundario;
+        padding: 40px;
+        width: 100%;
+        .historia-info {
+            flex: 1;
+            max-width: 550px;
+            .section-subtitulo {
+                font-size: 16px;
+                color: #ffffff;
+                margin-bottom: 10px;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+            p {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 1.6;
+                color: white;
+            }
+        }
+        .historia-img {
+            img {
+                width: 100%;
+                max-width: 400px;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            }
+        }
+    }
+}
