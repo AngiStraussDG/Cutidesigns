@@ -303,128 +303,7 @@ button.btn.btn-outline-success:disabled {
   background-color: #ffffff;
 }
 
-/*-------- galería -------*/
-.catalogo-header {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-  border-bottom: 1px solid #d78081;
-}
-.catalogo-header .header-content h1 {
-  font-size: 32px;
-  font-weight: bold;
-  margin: 0;
-  color: #d78081;
-  font-family: "Raleway", sans-serif;
-}
-.catalogo-header .header-content h1 .cantidad {
-  font-family: "Lato", sans-serif;
-  font-size: 18px;
-  font-weight: normal;
-  color: #a5565f;
-}
-.catalogo-header .header-content p {
-  font-size: 14px;
-  font-weight: 700;
-  color: #333333;
-  margin: 10px 0 20px;
-  font-family: "Raleway", sans-serif;
-}
-.catalogo-header .categorias {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 10px;
-}
-.catalogo-header .categorias ul {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  list-style: none;
-  margin: 0;
-}
-.catalogo-header .categorias ul li {
-  font-size: 14px;
-  font-family: "Raleway", sans-serif;
-}
-.catalogo-header .categorias ul li a {
-  font-weight: 700;
-  text-decoration: none;
-  color: #d78081;
-  padding-bottom: 5px;
-  border-bottom: 2px solid transparent;
-  transition: color 0.3s ease, border-color 0.3s ease;
-}
-.catalogo-header .categorias ul li a:hover, .catalogo-header .categorias ul li a.active {
-  color: #a5565f;
-  border-color: #a5565f;
-}
-.catalogo-header .categorias .boton-filtro {
-  font-weight: 700;
-}
-.catalogo-header .categorias .boton-filtro:hover {
-  background-color: #a5565f;
-  color: #fff;
-  border-color: #a5565f;
-}
-.catalogo-header .categorias .boton-filtro:active {
-  background-color: #a5565f;
-  border-color: #a5565f;
-  color: #fff;
-  box-shadow: none;
-}
-
-.galeria {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-.galeria .producto_galeria, .galeria .coleccion .coleccion-productos .producto_galeria, .coleccion .coleccion-productos .galeria .producto_galeria {
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.galeria .producto_galeria:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-}
-.galeria .producto_galeria img, .galeria .coleccion .coleccion-productos .producto_galeria img, .coleccion .coleccion-productos .galeria .producto_galeria img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px 10px 0 0;
-}
-
-/* breadcrumb */
-.breadcrumb {
-  background-color: transparent;
-  padding: 10px 0;
-  margin: 20px 50px 20px 50px;
-  font-size: 14px;
-}
-
-.breadcrumb-item a {
-  color: #d78081;
-  text-decoration: none;
-}
-
-.breadcrumb-item a:hover {
-  text-decoration: underline;
-}
-
-.breadcrumb-item.active {
-  color: #333333;
-  font-weight: bold;
-}
-
-/* filtros */
+/*--- off canvas filtros ---*/
 .offcanvas {
   background-color: #f4f1ee;
 }
@@ -580,7 +459,6 @@ button.btn.btn-outline-success:disabled {
   box-shadow: none;
 }
 
-/*--- contacto ---*/
 /* formulario */
 .form-contenedor {
   display: flex;
@@ -1070,6 +948,127 @@ button:hover {
   white-space: normal;
 }
 
+/*-------- galería -------*/
+.catalogo-header {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  border-bottom: 1px solid #d78081;
+}
+.catalogo-header .header-content h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0;
+  color: #d78081;
+  font-family: "Raleway", sans-serif;
+}
+.catalogo-header .header-content h1 .cantidad {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  color: #a5565f;
+}
+.catalogo-header .header-content p {
+  font-size: 14px;
+  font-weight: 700;
+  color: #333333;
+  margin: 10px 0 20px;
+  font-family: "Raleway", sans-serif;
+}
+.catalogo-header .categorias {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.catalogo-header .categorias ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  list-style: none;
+  margin: 0;
+}
+.catalogo-header .categorias ul li {
+  font-size: 14px;
+  font-family: "Raleway", sans-serif;
+}
+.catalogo-header .categorias ul li a {
+  font-weight: 700;
+  text-decoration: none;
+  color: #d78081;
+  padding-bottom: 5px;
+  border-bottom: 2px solid transparent;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+.catalogo-header .categorias ul li a:hover, .catalogo-header .categorias ul li a.active {
+  color: #a5565f;
+  border-color: #a5565f;
+}
+.catalogo-header .categorias .boton-filtro {
+  font-weight: 700;
+}
+.catalogo-header .categorias .boton-filtro:hover {
+  background-color: #a5565f;
+  color: #fff;
+  border-color: #a5565f;
+}
+.catalogo-header .categorias .boton-filtro:active {
+  background-color: #a5565f;
+  border-color: #a5565f;
+  color: #fff;
+  box-shadow: none;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.galeria .producto_galeria, .galeria .coleccion .coleccion-productos .producto_galeria, .coleccion .coleccion-productos .galeria .producto_galeria {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.galeria .producto_galeria:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+.galeria .producto_galeria img, .galeria .coleccion .coleccion-productos .producto_galeria img, .coleccion .coleccion-productos .galeria .producto_galeria img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+}
+
+/* breadcrumb */
+.breadcrumb {
+  background-color: transparent;
+  padding: 10px 0;
+  margin: 20px 50px 20px 50px;
+  font-size: 14px;
+}
+
+.breadcrumb-item a {
+  color: #d78081;
+  text-decoration: none;
+}
+
+.breadcrumb-item a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb-item.active {
+  color: #333333;
+  font-weight: bold;
+}
+
 .nosotros-section {
   display: flex;
   flex-direction: column;
@@ -1167,7 +1166,7 @@ button:hover {
   flex-direction: column;
   justify-content: center;
 }
-.contacto-seccion .informacion h3 {
+.contacto-seccion .informacion h2 {
   font-size: 28px;
   font-weight: bold;
   color: #d78081;
@@ -1191,7 +1190,7 @@ button:hover {
   justify-content: center;
   align-items: flex-end;
 }
-.contacto-seccion .formulario h2 {
+.contacto-seccion .formulario h1 {
   font-size: 28px;
   font-weight: bold;
   color: #d78081;

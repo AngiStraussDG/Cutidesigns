@@ -1,0 +1,111 @@
+/*-------- galería -------*/
+
+.catalogo-header {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    border-bottom: 1px solid $color-primario;
+    .header-content {
+        h1 {
+            font-size: 32px;
+            font-weight: bold;
+            margin: 0;
+            color: $color-primario;
+            font-family: $fuente-primaria;
+            .cantidad {
+                font-family: $fuente-secundaria;
+                font-size: 18px;
+                font-weight: normal;
+                color: $color-secundario;
+            }
+        }
+        p {
+            font-size: 14px;
+            font-weight: 700;
+            color: $color-texto;
+            margin: 10px 0 20px;
+            font-family: $fuente-primaria;
+        }
+    }
+    .categorias {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            list-style: none;
+            margin: 0;
+            li {
+                font-size: 14px;
+                font-family: $fuente-primaria;
+                a {
+                    font-weight: 700;
+                    text-decoration: none;
+                    color: $color-primario;
+                    padding-bottom: 5px;
+                    border-bottom: 2px solid transparent;
+                    transition: color 0.3s ease, border-color 0.3s ease;
+                    &:hover,
+                    &.active {
+                        color: $color-secundario;
+                        border-color: $color-secundario;
+                    }
+                }
+            }
+        }
+        .boton-filtro {
+            font-weight: 700;
+            &:hover {
+                background-color: $color-secundario;
+                color: #fff;
+                border-color: $color-secundario;
+            }
+            &:active {
+                background-color: $color-secundario;
+                border-color: $color-secundario;
+                color: #fff;
+                box-shadow: none;
+            }
+        }
+    }
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    .producto_galeria {
+        @include tarjeta($ancho: 100%, $radio: 10px, $sombra: 0 4px 6px rgba(0, 0, 0, 0.1));
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px 10px 0 0;
+        }
+    }
+}
+
+/* breadcrumb */
+
+.breadcrumb {
+    background-color: transparent; 
+    padding: 10px 0;
+    margin: 20px 50px 20px 50px; 
+    font-size: 14px; 
+}
+.breadcrumb-item a {
+    color: $color-primario; 
+    text-decoration: none; 
+}
+.breadcrumb-item a:hover {
+    text-decoration: underline; 
+}
+.breadcrumb-item.active {
+    color: $color-texto; 
+    font-weight: bold; 
+}
